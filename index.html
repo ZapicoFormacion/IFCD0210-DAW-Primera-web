@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>¡Hola mundo!</title>
+</head>
+
+<body style="background-color: lightgrey;">
+    <h1>HTML</h1>
+    <h2>Texto</h2>
+    <p>
+        En HTML se pueden añadir encabezados con diferente nivel de importancia y, por supuesto, párrafos que podrían
+        ser formateados con <b>negritas</b>, <i>cursivas</i>, <u>subrayados</u>, e incluso <s>tachados</s>. En el caso
+        de los encabezados se debería tener, por semántica, un único <b>&lt;h1></b> por página web, aunque se pueden
+        utilizar cuantos sean necesarios de los restantes niveles, siempre teniendo en cuenta mantener un criterio
+        lógico de anidación de niveles, tal y como se haría con el índice de un libro.
+    </p>
+    <code>
+        <pre>
+            &lt;h1>Encabezado de primer nivel&lt;/h1>
+            &lt;h2>Encabezado de segundo nivel&lt;/h2>
+            &lt;h3>Encabezado de tercer nivel&lt;/h3>
+            &lt;h4>Encabezado de cuarto nivel&lt;/h4>
+            &lt;h5>Encabezado de quinto nivel&lt;/h5>
+            &lt;h6>Encabezado de sexto nivel&lt;/h6>
+            &lt;p>Texto de un párrafo&lt;/p>
+            &lt;b>Texto en negrita&lt;/b>
+            &lt;i>Texto en cursiva&lt;/i>
+            &lt;u>Texto subrayado&lt;/u>
+            &lt;s>Texto tachado&lt;/s>
+        </pre>
+    </code>
+    <h2>Listas</h2>
+    <p>Es posible incluir listas ordenadas:</p>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol>
+    <code>
+        <pre>
+            &lt;ol>
+                &lt;li>Primer elemento&lt;/li>
+                &lt;li>Segundo elemento&lt;/li>
+                &lt;li>Tercer elemento&lt;/li>
+            &lt;/ol>    
+        </pre>
+    </code>
+    <p>Y también listas sin numeración:</p>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ul>
+    <code>
+        <pre>
+            &lt;ul>
+                &lt;li>Primer elemento&lt;/li>
+                &lt;li>Segundo elemento&lt;/li>
+                &lt;li>Tercer elemento&lt;/li>
+            &lt;/ul>    
+        </pre>
+    </code>
+    <h2>Textos pre-formateados</h2>
+    <p>Por defecto, en los navegadores web, se muestra todo el texto HTML de continuo, independientemente de los saltos
+        de línea que incluya el archivo html.<br>Es posible forzar un salto de línea empleando la etiqueta
+        <b>&lt;br></b>, pero también es posible forzar y respetar, ya no sólo los saltos de línea, sino también los
+        espacios ubicados al inicio de la línea para incluir contenidos que lo precisen, como por ejemplo código fuente.
+        Además, en el caso de querer incluir código HTML será necesario reemplazar el símbolo <b>&lt;</b> por lo que se
+        conoce como su secuencia de escape <b>&#38;lt;</b> para evitar que las etiquetas del código a mostrar sean
+        interpretadas por el navegador.<br>En caso de necesidad, incluso se podía <i>escapar</i> cualquier carácter,
+        como por ejemplo & que debería ser reemplazado por <b>&#38#38;</b> tal y como se ha hecho para poder mostrar
+        este texto en el navegador que estás usando para leer estos contenidos.
+    </p>
+    <pre>
+        Con diez cañones por banda,
+        viento en popa a toda vela,
+        no surca el mar, sino vuela,
+        un velero bergantín.
+        </pre>
+    <code>
+        <pre>
+            &lt;pre>
+                    Con diez cañones por banda,
+                    viento en popa a toda vela,
+                    no surca el mar, sino vuela,
+                    un velero bergantín.
+            &lt;/pre>
+        </pre>    
+    </code>
+</body>
+
+</html>
