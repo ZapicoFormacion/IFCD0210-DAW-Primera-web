@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Algunos apuntes sobre HTML</title>
+    <title>Apuntes sobre HTML</title>
 </head>
 
 <body style="background-color: lightgrey;">
-    <h1>HTML</h1>
+    <h1 id="mainHeader">HTML</h1>
     <h2>Texto</h2>
     <p>
         En HTML se pueden añadir encabezados con diferente nivel de importancia y, por supuesto, párrafos que podrían
@@ -74,10 +74,10 @@
         este texto en el navegador que estás usando para leer estos contenidos.
     </p>
     <pre>
-        Con diez cañones por banda,
-        viento en popa a toda vela,
-        no surca el mar, sino vuela,
-        un velero bergantín.
+            Con diez cañones por banda,
+            viento en popa a toda vela,
+            no surca el mar, sino vuela,
+            un velero bergantín.
         </pre>
     <code>
         <pre>
@@ -88,6 +88,36 @@
                     un velero bergantín.
             &lt;/pre>
         </pre>    
+    </code>
+    <h2>Imágenes</h2>
+    <p>
+        En un documento html se pueden incluir imágenes de archivos presentes junto al propio documento o también que
+        sean accesibles en cualquier url.<br>
+        Aunque es posible establecer sus medidas mediante atributos, no se recomienda hacerlo de esa manera pues es un
+        sistema que sólo se conserva por compatibilidad con versiones antiguas de html y podría dejar de tener soporte
+        en cualquier momento. La forma correcta de hacerlo será, por tanto, mediante estilos CSS.<br>
+        Toda imagen debería tener una descripción alternativa por motivos de accesibilidad y, opcionalmente, una
+        descripción emergente que aparezca al detener el cursor del ratón sobre el elemento.
+    </p>
+    <img src="https://www.riu.com/blog/wp-content/uploads/2018/07/shutterstock_310904339.jpg" alt="Una fotografía"
+        height="300" title="Una fotografía">
+    <h2>Enlaces</h2>
+    <p>
+        Los hipervínculos de HTML permiten acceder a diferentes puntos tanto del mismo documento como de otros
+        documentos o sitios web.<br>
+        Para <a href="#mainHeader">enlazar a un punto concreto de un documento</a> es necesario que alguna etiqueta
+        contenga el parámetro <i>id</i> estableciendo un nombre único en el documento y, a continuación, emplear un
+        enlace para acceder a ese punto.<br>
+        Para <a href="https://www.google.es/">enlazar a otro documento</a> tan sólo hay que indicar su url.
+        Finalmente, para enlazar a un punto concreto dentro de otro documento, se pueden combinar ambas características.
+    </p>
+    <code>
+        <pre>
+            &lt;h2 id="anyHeader">Un encabezado cualquiera&lt;/h2>
+            &lt;a href="#anyHeader">Un enlace a la etiqueta html cuyo id coincida, pudiendo ser cualquiera: encabezados, párrafos, imágenes, etc.&lt;/a>
+            &lt;a href="http://www.google.es">Un enlace a otro sitio o documento&lt;/a>
+            &lt;a href="anyDocument.html#anyHeader">Un enlace a un punto concreto dentro de otro documento&lt;/a>
+        </pre>
     </code>
 </body>
 
